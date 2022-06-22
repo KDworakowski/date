@@ -5,7 +5,7 @@
 1. clone repository using `git clone https://github.com/KDworakowski/date`
 2. execute script using `./dateToCron.sh` or `./dateToSystemd.sh`
 
-**IF YOU EXPERIENCE THAT SCRIPT WONT RUN, TRY CHANGIN THE PERMISSIONS USING `chmod +x ./dateToCron.sh ./dateToSystemd.sh`**
+**IF YOU EXPERIENCE THAT SCRIPT WONT RUN, TRY CHANGING THE PERMISSIONS USING `chmod +x ./dateToCron.sh ./dateToSystemd.sh`**
 
 ## Config
 
