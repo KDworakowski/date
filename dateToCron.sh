@@ -1,5 +1,7 @@
 #!/bin/bash
 
+Data() {
+
 DIR="./data"
 if ! [ -d "$DIR" ]; then
     mkdir data
@@ -14,3 +16,6 @@ croncmdpath="/Users/.../date/"
 
 cronjob="* * * * * cd $croncmdpath && ./dateToCron.sh"
 ( crontab -l | grep -v -F "$croncmdpath" ; echo "$cronjob" ) | crontab -
+
+} 2>log.txt
+Data
