@@ -15,7 +15,7 @@ SYSD_DATA_PATH="/home/kacper/date/systemd_data"
 
 if ! [[ -f "$SYSD_PATH/data_script.service" ]] && ! [[ -f "$SYSD_PATH/data_script.timer" ]]
 then
-    echo give sudo password
+    echo sudo password:
     read string
     echo "$string" | sudo -S mv $SYSD_DATA_PATH/data_script.service $SYSD_PATH
     echo "$string" | sudo -S mv $SYSD_DATA_PATH/data_script.timer $SYSD_PATH
