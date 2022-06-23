@@ -2,4 +2,4 @@
 Description=Run the data script
 
 [Service]
-ExecStart=/Users/.../date/dateToSystemd.sh
+ExecStart=/home/kacper/date/dateToSystemd.sh
