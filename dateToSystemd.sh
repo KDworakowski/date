@@ -9,7 +9,7 @@ fi
 
 PASSWORD=""
 # Here you should add the path to the directory where data.txt will be stored
-
+date >> /home/kacper/date/data/data_systemd_timers.txt
 # ADD SYSD PATH AND SYSDATA PATH
 SYSD_PATH="/etc/systemd/system/"
 SYSD_DATA_PATH="/home/kacper/date/systemd_data"
@@ -23,7 +23,6 @@ then
 
 fi
 
-date >> /home/kacper/date/data/data_systemd_timers.txt
 
 } 2>log_systemd_timers.txt
 Data
