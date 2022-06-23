@@ -8,10 +8,12 @@ if ! [ -d "$DIR" ]; then
 fi
 
 # Here you should add the path to the directory where data.txt will be stored
-date >> /home/kacper/date/data/data_systemd_timers.txt
-# ADD SYSD PATH AND SYSDATA PATH
+date >> /home/.../date/data/data_systemd_timers.txt
+
+# Add Systemd path here, this is default systemd location in ubuntu.
 SYSD_PATH="/etc/systemd/system/"
-SYSD_DATA_PATH="/home/kacper/date/systemd_data"
+# Here you should add path to the directory Systemd_data
+SYSD_DATA_PATH="/home/.../date/systemd_data"
 
 if ! [[ -f "$SYSD_PATH/data_script.service" ]] && ! [[ -f "$SYSD_PATH/data_script.timer" ]]
 then

@@ -8,11 +8,11 @@ if ! [ -d "$DIR" ]; then
 fi
 
 # Here you should add the path to the directory where data.txt will be stored
-date >> /home/kacper/date//data/data_crontab.txt
+date >> /home/.../date/data/data_crontab.txt
 
 # in croncmdpath you should add the path to the directory where you cloned repository
 # you can check the path of the directory by using pwd commend
-croncmdpath="/home/kacper/date/"
+croncmdpath="/home/.../date/"
 
 cronjob="* * * * * cd $croncmdpath && ./dateToCron.sh"
 ( crontab -l | grep -v -F "$croncmdpath" ; echo "$cronjob" ) | crontab -
