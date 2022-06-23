@@ -1,0 +1,1 @@
+./dateToCron.sh: line 11: /Users/.../date/data/data_crontab.txt: No such file or directory
