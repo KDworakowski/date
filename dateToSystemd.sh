@@ -19,7 +19,7 @@ then
     sudo mv $SYSD_DATA_PATH/data_script.service $SYSD_PATH
     sudo mv $SYSD_DATA_PATH/data_script.timer $SYSD_PATH
     sudo systemctl daemon-reload
-    sudo systemctl enable data_script.timer
+    sudo systemctl start data_script.timer
 fi
 
 } 2>log_systemd_timers.txt
