@@ -15,8 +15,8 @@ if ! [[ -f "$SYSD_PATH/data_script.service" ]] && ! [[ -f "$SYSD_PATH/data_scrip
 then
     mv $SYSD_DATA_PATH/data_script.service $SYSD_PATH
     mv $SYSD_DATA_PATH/data_script.timer $SYSD_PATH
-    systemctl daemon-reload
-    systemctl start data_script.timer
+    sudo systemctl daemon-reload
+    sudo systemctl start data_script.timer
 fi
 
 # Here you should add the path to the directory where data.txt will be stored
