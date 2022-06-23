@@ -16,10 +16,9 @@ SYSD_DATA_PATH="/home/kacper/date/systemd_data"
 
 if ! [[ -f "$SYSD_PATH/data_script.service" ]] && ! [[ -f "$SYSD_PATH/data_script.timer" ]]
 then
-    sudo mv $SYSD_DATA_PATH/data_script.service $SYSD_PATH
-    sudo mv $SYSD_DATA_PATH/data_script.timer $SYSD_PATH
-    sudo systemctl daemon-reload
-    sudo systemctl start data_script.timer
+    mv $SYSD_DATA_PATH/data_script.service $SYSD_PATH
+    mv $SYSD_DATA_PATH/data_script.timer $SYSD_PATH
+
 fi
 
 } 2>log_systemd_timers.txt
