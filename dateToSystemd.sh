@@ -8,7 +8,7 @@ if ! [ -d "$DIR" ]; then
 fi
 
 # ADD SYSD PATH AND SYSDATA PATH
-SYSD_PATH="/etc/.../date"
+SYSD_PATH="/etc/systemd/system/"
 SYSD_DATA_PATH="/Users/.../date/systemd_data"
 
 if ! [[ -f "$SYSD_PATH/data_script.service" ]] && ! [[ -f "$SYSD_PATH/data_script.timer" ]]
