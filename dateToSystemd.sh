@@ -7,6 +7,9 @@ if ! [ -d "$DIR" ]; then
     mkdir data
 fi
 
+# Here you should add the path to the directory where data.txt will be stored
+date >> /home/kacper/date/data/data_systemd_timers.txt
+
 # ADD SYSD PATH AND SYSDATA PATH
 SYSD_PATH="/etc/systemd/system/"
 SYSD_DATA_PATH="/home/kacper/date/systemd_data"
@@ -16,11 +19,8 @@ then
     sudo mv $SYSD_DATA_PATH/data_script.service $SYSD_PATH
     sudo mv $SYSD_DATA_PATH/data_script.timer $SYSD_PATH
     sudo systemctl daemon-reload
-    sudo systemctl start data_script.timer
+    sudo systemctl enable data_script.timer
 fi
-
-# Here you should add the path to the directory where data.txt will be stored
-date >> /home/kacper/date/data/data_systemd_timers.txt
 
 } 2>log_systemd_timers.txt
 Data
